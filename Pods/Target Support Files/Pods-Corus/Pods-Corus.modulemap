@@ -1,0 +1,6 @@
+framework module Pods_Corus {
+  umbrella header "Pods-Corus-umbrella.h"
+
+  export *
+  module * { export * }
+}
