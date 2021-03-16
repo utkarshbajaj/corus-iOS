@@ -14,16 +14,14 @@ class RegisterController: UIViewController {
     
     var handle: AuthStateDidChangeListenerHandle?
 
-//    let genderData = ["Male", "Female", "Non-binary", "Other"]
+//    
 //    @IBOutlet weak var genderPicker: UIPickerView!
 //
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        genderPicker.delegate = self
-//
-//        // Do any additional setup after loading the view.
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -39,20 +37,7 @@ class RegisterController: UIViewController {
       Auth.auth().removeStateDidChangeListener(handle!)
       // [END remove_auth_listener]
     }
-    
-//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-//        genderData.count
-//    }
-//
-//
-//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-//        return 1
-//    }
-//
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        return genderData[row]
-//    }
-    
+
     
     @IBOutlet weak var passwd: UITextField!
     @IBOutlet weak var newpasswd: UITextField!
@@ -73,6 +58,7 @@ class RegisterController: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                     return
                 }
+                self.performSegue(withIdentifier: "regNext", sender: self)
                 print("\(user.email!) created")
             }
         }

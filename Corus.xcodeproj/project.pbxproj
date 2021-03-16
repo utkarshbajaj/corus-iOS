@@ -17,6 +17,9 @@
 		AA4F550625FF3FE6008B93BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4F550425FF3FE6008B93BD /* LaunchScreen.storyboard */; };
 		AAE15CB725FF51A60008072C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE15CB625FF51A60008072C /* GoogleService-Info.plist */; };
 		AAE34B7A25FF7480007773C4 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE34B7925FF7480007773C4 /* RegisterController.swift */; };
+		AAE34B7C25FFD1CC007773C4 /* RegisterNextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE34B7B25FFD1CC007773C4 /* RegisterNextController.swift */; };
+		AAE34B7E25FFD460007773C4 /* FInalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE34B7D25FFD460007773C4 /* FInalViewController.swift */; };
+		AAE34B8225FFD6D4007773C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE34B8125FFD6D4007773C4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		AA4F550725FF3FE6008B93BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE15CB625FF51A60008072C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AAE34B7925FF7480007773C4 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		AAE34B7B25FFD1CC007773C4 /* RegisterNextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNextController.swift; sourceTree = "<group>"; };
+		AAE34B7D25FFD460007773C4 /* FInalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FInalViewController.swift; sourceTree = "<group>"; };
+		AAE34B8125FFD6D4007773C4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,8 @@
 			children = (
 				AA4F54F625FF3FDE008B93BD /* AppDelegate.swift */,
 				AA4F54F825FF3FDE008B93BD /* SceneDelegate.swift */,
-				AA4F54FA25FF3FDE008B93BD /* ViewController.swift */,
-				AAE34B7925FF7480007773C4 /* RegisterController.swift */,
-				AA4F54FC25FF3FDE008B93BD /* Main.storyboard */,
+				AAE34B8025FFD6B3007773C4 /* View */,
+				AAE34B7F25FFD6A0007773C4 /* Controller */,
 				AA4F550225FF3FE6008B93BD /* Assets.xcassets */,
 				AA4F550425FF3FE6008B93BD /* LaunchScreen.storyboard */,
 				AA4F550725FF3FE6008B93BD /* Info.plist */,
@@ -90,6 +95,26 @@
 				AA4F54FF25FF3FDE008B93BD /* Corus.xcdatamodeld */,
 			);
 			path = Corus;
+			sourceTree = "<group>";
+		};
+		AAE34B7F25FFD6A0007773C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA4F54FA25FF3FDE008B93BD /* ViewController.swift */,
+				AAE34B7925FF7480007773C4 /* RegisterController.swift */,
+				AAE34B7B25FFD1CC007773C4 /* RegisterNextController.swift */,
+				AAE34B8125FFD6D4007773C4 /* LoginViewController.swift */,
+				AAE34B7D25FFD460007773C4 /* FInalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AAE34B8025FFD6B3007773C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA4F54FC25FF3FDE008B93BD /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F7A0E91AD3C42A8371BD882C /* Frameworks */ = {
@@ -218,7 +243,10 @@
 			files = (
 				AAE34B7A25FF7480007773C4 /* RegisterController.swift in Sources */,
 				AA4F54FB25FF3FDE008B93BD /* ViewController.swift in Sources */,
+				AAE34B7E25FFD460007773C4 /* FInalViewController.swift in Sources */,
 				AA4F54F725FF3FDE008B93BD /* AppDelegate.swift in Sources */,
+				AAE34B8225FFD6D4007773C4 /* LoginViewController.swift in Sources */,
+				AAE34B7C25FFD1CC007773C4 /* RegisterNextController.swift in Sources */,
 				AA4F550125FF3FDE008B93BD /* Corus.xcdatamodeld in Sources */,
 				AA4F54F925FF3FDE008B93BD /* SceneDelegate.swift in Sources */,
 			);
